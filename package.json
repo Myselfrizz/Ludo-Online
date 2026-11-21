@@ -1,0 +1,8 @@
+{
+  "name": "online-ludo",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build && npm --prefix server install --include=dev && npm --prefix server run build",
+    "start": "node server/dist/server.js"
+  }
+}
